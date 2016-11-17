@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Boomerang 
 
 Boomerang is a static Cydia repository that can be run on Github Pages using Jekyll, or anywhere else.
@@ -103,3 +104,6 @@ MIT
 I would prefer that you leave at least one of the links to my [twitter](https://twitter.com/itsjake88) or to the boomerang repository in the depictions.
 
 If you are using Boomerang for your repository, please shoot me an email, as I'd love to list it here!
+=======
+# Cydia-Repo-Updated
+>>>>>>> a9e0f6048942b651d6e18a663c956f23bec1abc2
