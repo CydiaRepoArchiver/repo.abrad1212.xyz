@@ -1,0 +1,1 @@
+./repo.sh add com.abrad.alerts com.abrad.alerts.deb
