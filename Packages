@@ -1,6 +1,16 @@
+Package: com.abrad.alerts
+Name: Alerts
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: abrad1212
+Author: abrad1212
+Section: Tweaks
+Version: 0.0.4-2+debug
+Installed-Size: 184
 MD5sum: 66d8d3e181299bc12b63a13f9023cf70
 Size: 4032
 Filename: debs/com.abrad.alerts.deb
-Depiction: https://repo.abrad1212.xyz/depictions/?p=
+Depiction: https://repo.abrad1212.xyz/depictions/?p=com.abrad.alerts
 
 
