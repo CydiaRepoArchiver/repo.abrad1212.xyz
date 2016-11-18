@@ -1,1 +1,1 @@
-./repo.sh add depictions/packages/com.abrad.alerts debs/com.abrad.alerts.deb
+./repo.sh add com.abrad.alerts.json ./debs/com.abrad.alerts.deb
