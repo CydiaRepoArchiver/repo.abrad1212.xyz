@@ -5,8 +5,8 @@
 	"version": "0.0.5",
 	"description": "Get Notified When Springboard Resprings!",
 	"changelog": {
-		"0.0.5": [
-			"Initial Testing"
+		"0.0.5":	[
+			"Initial Release"
 		]
 	}
 }
