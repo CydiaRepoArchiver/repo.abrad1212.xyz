@@ -36,10 +36,10 @@ Description: A tweak that will bring better notification handling!
 Maintainer: abrad1212
 Author: abrad1212
 Section: Tweaks
-Version: 0.0.2-2+debug
+Version: 0.0.2-3+debug
 Installed-Size: 280
-MD5sum: 0850014bfd65ea5a3f5c8188712ab279
-Size: 6590
+MD5sum: 34aedac64f014f0a8b6ae8ccc7a716db
+Size: 6578
 Filename: debs/com.abrad.springboardalerts.deb
 Depiction: https://repo.abrad1212.xyz/depictions/?p=com.abrad.springboardalerts
 
