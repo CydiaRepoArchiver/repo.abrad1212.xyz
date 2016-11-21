@@ -28,4 +28,19 @@ Size: 4032
 Filename: debs/com.abrad.alerts.deb
 Depiction: https://repo.abrad1212.xyz/depictions/?p=com.abrad.alerts
 
+Package: com.abrad.springboardalerts
+Name: SpringBoard Alerts
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: A tweak that will bring better notification handling!
+Maintainer: abrad1212
+Author: abrad1212
+Section: Tweaks
+Version: 0.0.1-1+debug
+Installed-Size: 280
+MD5sum: ba2e5a39e83001992b7b858c5c421734
+Size: 6528
+Filename: debs/com.abrad.springboardalerts.deb
+Depiction: https://repo.abrad1212.xyz/depictions/?p=com.abrad.springboardalerts
+
 
