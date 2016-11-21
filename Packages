@@ -6,11 +6,11 @@ Description: An awesome MobileSubstrate tweak!
 Maintainer: abrad1212
 Author: abrad1212
 Section: Tweaks
-Version: 0.0.4-2+debug
-Installed-Size: 184
-MD5sum: 66d8d3e181299bc12b63a13f9023cf70
-Size: 4032
-Filename: debs/com.abrad.alerts.deb
+Version: 0.0.1-2+debug
+Installed-Size: 280
+MD5sum: 1b8aa438abdc0ab08f61a5d56b82f3b9
+Size: 6558
+Filename: debs/AlertsDebug.deb
 Depiction: https://repo.abrad1212.xyz/depictions/?p=com.abrad.alerts
 
 Package: com.abrad.alerts
@@ -21,11 +21,11 @@ Description: An awesome MobileSubstrate tweak!
 Maintainer: abrad1212
 Author: abrad1212
 Section: Tweaks
-Version: 0.0.1-2+debug
-Installed-Size: 280
-MD5sum: 1b8aa438abdc0ab08f61a5d56b82f3b9
-Size: 6558
-Filename: debs/com.abrad.alerts_debug.deb
+Version: 0.0.4-2+debug
+Installed-Size: 184
+MD5sum: 66d8d3e181299bc12b63a13f9023cf70
+Size: 4032
+Filename: debs/com.abrad.alerts.deb
 Depiction: https://repo.abrad1212.xyz/depictions/?p=com.abrad.alerts
 
 
