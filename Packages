@@ -6,10 +6,10 @@ Description: Take control over your iOS notifications!
 Maintainer: abrad1212
 Author: abrad1212
 Section: Tweaks
-Version: 0.0.1-1+debug
+Version: 0.0.2-1+debug
 Installed-Size: 280
-MD5sum: fbcbe63cdb28144b17acd7a73b1a9c0f
-Size: 6608
+MD5sum: e3832e32cb0aa6ca1d5588213e167f22
+Size: 6568
 Filename: debs/com.abrad.pushy.deb
 Depiction: http://repo.abrad1212.xyz/depictions/?p=Pushy
 
