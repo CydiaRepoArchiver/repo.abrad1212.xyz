@@ -1,0 +1,19 @@
+<package>
+    <id>com.abrad.pushy</id>
+    <name>Pushy</name>
+    <version>0.0.1-1+debug</version>
+    <compatibility>
+        <firmware>
+            <maxiOS>9.3.3</maxiOS>
+            <otherVersions>unsupported</otherVersions>
+        </firmware>
+    </compatibility>
+    <descriptionlist>
+        <description>A tweak that will change everything about notifications!</description>
+    </descriptionlist>
+    <screenshots></screenshots>
+    <changelog>
+        <change>Initial Release</change>
+    </changelog>
+    <links></links>
+</package>
