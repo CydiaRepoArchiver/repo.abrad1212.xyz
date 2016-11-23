@@ -20,7 +20,8 @@ do
     echo -n "Enter The Depiction Folder Name > "
     read Depic
     
-    dpkg-deb -f "$deb" Package | echo "Depiction: https://$(head -n 1 CNAME)/depictions/$Depic/index.html" >> Packages
+    #dpkg-deb -f "$deb" Package | echo "Depiction: https://$(head -n 1 CNAME)/depictions/$Depic/index.html" >> Packages
+    dpkg-deb -f "$deb" Package | echo "Depiction: $(head -n 1 depic)/$Depic/index.html" >> Packages
 	echo "" >> Packages
 
 done
