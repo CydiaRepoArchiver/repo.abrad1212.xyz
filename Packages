@@ -1,3 +1,18 @@
+Package: com.abrad.pushy
+Name: Pushy
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Take control over your iOS notifications!
+Maintainer: abrad1212
+Author: abrad1212
+Section: Tweaks
+Version: 0.0.1-1+debug
+Installed-Size: 280
+MD5sum: fbcbe63cdb28144b17acd7a73b1a9c0f
+Size: 6608
+Filename: debs/com.abrad.pushy.deb
+Depiction: http://repo.abrad1212.xyz/depictions/?p=Pushy
+
 Package: com.abrad.springboardalerts
 Name: SpringBoard Alerts
 Depends: mobilesubstrate
