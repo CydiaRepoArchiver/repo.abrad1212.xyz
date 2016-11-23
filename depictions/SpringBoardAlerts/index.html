@@ -2,13 +2,63 @@
 <html>
     
     <head>
-        <title>SpringBoard Alerts</title>
+        <!--<title>SpringBoard Alerts</title>-->
         
         <link rel="stylesheet" href="../css/index.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="../js/data-loader-engine.js"></script>
+        <script src="../js/ios-version-check.js"></script>
         
     </head>
     
     <body class="depiction">
+        
+        <script>
+            var contentBlocks = {
+                "#packageName": { "type": "text", "source": "package>name" },
+                "#packageHeader": { "type": "custom", "source": "package>name", "render": function (element, source) { if (navigator.userAgent.search("/Cydia/") == -1) { $(element).show(); } } },
+                "#packageVersion": { "type": "text", "source": "package>version" },
+                "#compatibilityCheck": { "type": "custom", "source": "package>compatibility>firmware", "render": function (element, source) { var res = ios_version_check( $(source).find("miniOS").text(), $(source).find("maxiOS").text(), $(source).find("otherVersions").text(), function (message, isBad) { $(element).html(message).addClass((isBad?'alert-danger': 'alert-success')); } ); if(res==0) { $(element).hide() } } },
+                "#descriptionList": { "type": "list", "source": "package>descriptionList>description", "paragraphElement": "<li class='list-group-item'>", "emptyListCallback": function (e) { $("#descriptionPanel").hide(); } }
+            }
+        
+            $(document).ready(function()
+            {
+                $.ajax({
+                    type: "GET",
+                    dataType: "xml",
+                    url: ("info.xml"),
+                    success: function (xml) {
+                        document.title = $(xml).find("package>name").text();
+                        //console.log(document.getElementById("content").children.item(0).children.item(0).innerHTML);
+                        document.getElementById("content").children.item(0).children.item(0).innerHTML = $(xml).find("package>descriptionList>description").text();
+                        
+                        Data_Loader_Engine(contentBlocks, xml);
+                       
+                        $("#changelog-1").append( $(xml).find("package>changelog>change").text() );
+                        
+                        var htmlstring = document.getElementById("changelog-2").innerHTML;
+                        htmlstring = (htmlstring.trim) ? htmlstring.trim() : htmlstring.replace(/^\s+/, '');
+
+                        console.log(htmlstring);
+
+                        if (htmlstring == "") {
+                            document.getElementById("changelog-2").remove();
+                            document.getElementById("changelog-3").remove();
+                            document.getElementById("changelog-4").remove();
+                            document.getElementById("changelog-5").remove();
+                        }
+                        
+                        $(".changelog-btn").click(function () {
+                            $("#changelog-1").toggle();
+                            
+                        });
+                   }
+               });
+               
+            });
+        </script>
         
         <header>
             <h1>Cydia Package</h1>
@@ -36,14 +86,32 @@
                 </li>
             </ul>
             
-            <ul>
+            <ul class="changelog-list">
                 <li>
-                    <a href="changelog.html" role="button">Changelog</a>
+                    <a role="button" class="changelog-btn">Changelog</a>
                 </li>
+                <ul id="changes">
+                    <li id="changelog-1">
+                    
+                    </li>
+                    <li id="changelog-2">
+                    
+                    </li>
+                    <li id="changelog-3">
+                    
+                    </li>
+                    <li id="changelog-4">
+                    
+                    </li>
+                    <li id="changelog-5">
+                    
+                    </li>
+                </ul>
+                
             </ul>
             <h2 id="know-issues">Known Issues</h2>
             <ul>
-                <li>No Current Issues</li>
+                <li>No Known Current Issues</li>
             </ul>
         </main>
         

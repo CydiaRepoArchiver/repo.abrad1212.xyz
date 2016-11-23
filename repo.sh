@@ -17,11 +17,11 @@ do
     wc -c "$deb" | echo "Size: $(awk '{ print $1 }')" >> Packages
     echo "Filename: $deb" >> Packages
     
-    echo -n "Enter The Depiction Folder Name For $deb > "
+    echo -n "Depiction Folder Name For $deb > "
     read Depic
     
     #dpkg-deb -f "$deb" Package | echo "Depiction: https://$(head -n 1 CNAME)/depictions/$Depic/index.html" >> Packages
-    dpkg-deb -f "$deb" Package | echo "Depiction: $(head -n 1 depic)/$Depic/index.html" >> Packages
+    dpkg-deb -f "$deb" Package | echo "Depiction: $(head -n 1 depic)/?p=$Depic" >> Packages
 	echo "" >> Packages
 
 done

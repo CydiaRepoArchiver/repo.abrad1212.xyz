@@ -1,0 +1,19 @@
+<package>
+    <id>com.abrad.springboardalerts</id>
+    <name>SpringBoard Alerts</name>
+    <version>0.0.3-2+debug</version>
+    <compatibility>
+        <firmware>
+            <maxiOS>9.3.3</maxiOS>
+            <otherVersions>unsupported</otherVersions>
+        </firmware>
+    </compatibility>
+    <descriptionlist>
+        <description>A tweak that will bring better notification handling!</description>
+    </descriptionlist>
+    <screenshots></screenshots>
+    <changelog>
+        <change>Initial Release</change>
+    </changelog>
+    <links></links>
+</package>
