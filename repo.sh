@@ -17,9 +17,15 @@ do
     wc -c "$deb" | echo "Size: $(awk '{ print $1 }')" >> Packages
     echo "Filename: $deb" >> Packages
     
+    
+    
     echo -n "Depiction Folder Name For $deb > "
     read Depic
-    echo Depic >> $DepictionFile;
+    
+    if $DepictionFileContents == "";
+    then
+        echo $Depic >> $DepictionFile;
+    fi
     
     #dpkg-deb -f "$deb" Package | echo "Depiction: https://$(head -n 1 CNAME)/depictions/$Depic/index.html" >> Packages
     dpkg-deb -f "$deb" Package | echo "Depiction: $(head -n 1 depic)/?p=$Depic" >> Packages
