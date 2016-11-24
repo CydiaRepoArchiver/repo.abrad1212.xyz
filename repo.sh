@@ -17,8 +17,6 @@ do
     wc -c "$deb" | echo "Size: $(awk '{ print $1 }')" >> Packages
     echo "Filename: $deb" >> Packages
     
-    
-    
     echo -n "Depiction Folder Name For $deb > "
     read Depic
     
