@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DepictionFile="depic.txt"
+DepictionFile="depicSave.txt"
 DepictionFileContents="`cat $DepictionFile`"
 
 rm Packages
@@ -19,6 +19,7 @@ do
     
     echo -n "Depiction Folder Name For $deb > "
     read Depic
+    echo Depic >> $DepictionFile;
     
     #dpkg-deb -f "$deb" Package | echo "Depiction: https://$(head -n 1 CNAME)/depictions/$Depic/index.html" >> Packages
     dpkg-deb -f "$deb" Package | echo "Depiction: $(head -n 1 depic)/?p=$Depic" >> Packages
