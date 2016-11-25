@@ -6,11 +6,11 @@ Description: Take control over your iOS notifications!
 Maintainer: abrad1212
 Author: abrad1212
 Section: Tweaks
-Version: 0.0.2-12+debug
+Version: 0.0.2-13+debug
 Installed-Size: 280
-MD5sum: 20b0a640033c543bd368e388c6653b0c
-Size: 7340
-Filename: debs/com.abrad.pushy_0.0.2-12+debug_iphoneos-arm.deb
+MD5sum: 1e67ffe8958d9ee11b962182c9e46e7d
+Size: 7148
+Filename: debs/com.abrad.pushy_0.0.2-13+debug_iphoneos-arm.deb
 Depiction: http://repo.abrad1212.xyz/depictions/?p=Pushy
 
 Package: com.abrad.springboardalerts

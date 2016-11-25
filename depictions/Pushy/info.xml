@@ -1,7 +1,7 @@
 <package>
     <id>com.abrad.pushy</id>
     <name>Pushy</name>
-    <version>0.0.2-6+debug</version>
+    <version>0.0.2-13+debug</version>
     <compatibility>
         <firmware>
             <maxiOS>9.3.3</maxiOS>
